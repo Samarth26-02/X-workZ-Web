@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            border: 2px solid red;
+        }
+        .relative{
+            position: relative;
+            border: 2px solid green;
+        }
+        .virat{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .rajat{
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+        .chahal{
+            position: absolute;
+            top: 40px;
+            left: 0;
+        }
+        .dekock{
+            position: absolute;
+            /* top: 0px;
+            left: 80px; */
+            bottom: 0;
+            right: 0;
+        }
+        .imgrelative{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- position -->
+     <div class="fixed">Css position</div><br>
+     <div class="relative">Css relative</div>
+     <div class="relative">
+        <img class="imgrelative" src="rcb.png">
+        <span class="virat">Virat kholi</span>
+        <span class="rajat">Rajat patidar</span>
+        <span class="chahal">Chahal</span>
+        <span class="dekock">DeKock</span>
+     </div>
+</body>
+</html>

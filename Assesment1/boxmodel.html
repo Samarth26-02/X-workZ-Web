@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .model{
+            border: 10px solid red;
+            margin: 20px;
+            padding: 30px;
+        }
+        .box1{
+            border: 3px solid green;
+            height: 100px;
+            width: 200px;
+            margin: 100px 10px 10px 500px;
+            background-color: aqua;
+        }
+        .box2{
+                border: 2px solid rgb(27, 14, 214);
+                height: 50px;
+                width: 50px;
+                margin: 10px 10px;
+                background-color: black;
+            }
+            /* 1.Descedent selector div p{}
+               2.Child selector div > p{}
+               3.Adjacent sibling selector div + p{}
+               4.General sibling selector div ~ p{}
+               */
+        div p{
+            color: rgb(21, 192, 19);
+        }
+        div > p{
+            color: blueviolet;
+        }
+        div + p{
+            color: brown;
+        }
+        div ~ p{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="model">CSS Box Model</div><br>
+    <!-- border for rectangle -->
+     <div class="box1">
+        <div class="box2"></div>
+     </div>
+     <div>
+        <p>lgtrdtrsdb yrddrsrtyg yfrdry</p>
+        <p>ydrdtjgug</p>
+        <span>
+            <p>jjjjjjjjjjjjjj</p>
+        </span>
+        <p>ggggggg</p>
+     </div>
+     <p>kyg</p>
+     <p>llllllllllll</p>
+</body>
+</html>
