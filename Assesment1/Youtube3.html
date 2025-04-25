@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header img {
+      height: 30px;
+      margin-right: 20px;
+    }
+    .search-bar {
+      flex: 1;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .main-content {
+      display: flex;
+      padding: 20px;
+    }
+
+    .video-section {
+      flex: 3;
+      margin-right: 20px;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      height: 500px;
+      border-radius: 8px;
+    }
+
+    .video-title {
+      font-size: 24px;
+      margin: 12px 0;
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .channel-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .channel-info h6 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .channel-info button {
+      margin-left: auto;
+      padding: 8px 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .suggested-videos {
+      flex: 1.2;
+    }
+
+    .suggested-video {
+      display: flex;
+      margin-bottom: 15px;
+      background-color: white;
+      padding: 5px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .suggested-video iframe {
+      width: 160px;
+      height: 90px;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+
+    .suggested-video p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="youtube.png" alt="YouTube Logo">
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Main Video -->
+    <div class="video-section">
+      <iframe src="https://www.youtube.com/embed/jsZn3oq-FCA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      <div class="video-title">1 in a Trillion Football Moments</div>
+
+      <div class="channel-info">
+        <img src="image.png" alt="Channel Logo">
+        <div>
+          <h6>AshStudio7</h6>
+          <small>2.3M Subscribers</small>
+        </div>
+        <button>Subscribe</button>
+      </div>
+    </div>
+
+    <!-- Suggestions -->
+    <div class="suggested-videos">
+      <div class="suggested-video">
+        <iframe src="https://www.youtube.com/embed/HscrSwilshM" title="Video 2" frameborder="0" allowfullscreen></iframe>
+        <div>
+          <p><strong>Football Revenge & Karma</strong></p>
+          <p>2.4M views · 5 months ago</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <iframe src="https://www.youtube.com/embed/j47pl54irSc" title="Video 3" frameborder="0" allowfullscreen></iframe>
+        <div>
+          <p><strong>Impossible Saves in Football</strong></p>
+          <p>1.1M views · 4 months ago</p>
+        </div>
+      </div>
+
+      <div class="suggested-video">
+        <iframe src="https://www.youtube.com/embed/joR5POeNcnk" title="Video 4" frameborder="0" allowfullscreen></iframe>
+        <div>
+          <p><strong>Football's Funny Moments</strong></p>
+          <p>3.8M views · 1 year ago</p>
+        </div>
+      </div>
+
+      <!-- Add more suggested videos as needed -->
+
+    </div>
+  </div>
+
+</body>
+</html>
