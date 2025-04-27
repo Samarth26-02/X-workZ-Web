@@ -9,23 +9,29 @@ function submitForm() {
     let ageInput = document.formName.ageAge.value;
     let emailinput = document.formName.emailEmail.value;
 
-    // alert(nameInput)
-    // alert(numInput)
-    // alert(gendInput)
-    // alert(ageInput)
-    // alert(emailinput)
+//   this is to create a form using html and js codes
 
-
-    if (
-        (numInput.length > 10 && numInput.length < 30) &&
-        (nameInput.length > 3 && nameInput.length < 30) &&
-        (ageInput > 18 && ageInput < 70)
-    ) {
+    if (numInput.length > 10 && numInput.length < 30) {
         valu = true;
-        alert("matching conditions")
-    } else {
-        alert("not marching conditions")
+    }
+    else {
         valu = false;
+        alert("Invalid Number")
+    }
+    if (nameInput.length > 6 && nameInput.length < 30) {
+        valu = true;
+    }
+    else {
+        valu = false;
+        alert("Name Length Not Match")
+    }
+
+    if (ageInput > 18 && ageInput < 70) {
+        valu = true;
+    }
+    else {
+        valu = false;
+        alert("Enter valid Age")
     }
     return valu
 
