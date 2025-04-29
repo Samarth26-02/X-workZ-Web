@@ -1,38 +1,38 @@
-function onClick() {
-    alert("form is Submitted")
-}
 function submitForm() {
-    let valu = true;
+    let val = true;
+  
     let nameInput = document.formName.nameName.value;
-    let numInput = document.formName.numberNumber.value;
-    let gendInput = document.formName.Gender.value;
-    let ageInput = document.formName.ageAge.value;
-    let emailinput = document.formName.emailEmail.value;
-
-//   this is to create a form using html and js codes
-
-    if (numInput.length > 10 && numInput.length < 30) {
-        valu = true;
+    let numberInput = document.formName.numberName.value;
+    let ageInput = document.formName.age.value;
+  
+    if (nameInput.length < 3 || nameInput.length >= 20) {
+      val = false;
+      checkError("nameInput","The length of name should be greater than 3 and less than 20");
     }
-    else {
-        valu = false;
-        alert("Invalid Number")
-    }
-    if (nameInput.length > 6 && nameInput.length < 30) {
-        valu = true;
-    }
-    else {
-        valu = false;
-        alert("Name Length Not Match")
+  
+    if (numberInput.length != 10) {
+      val = false;
+      checkError("numberInput", "The length of number should be 10 digit");
     }
 
-    if (ageInput > 18 && ageInput < 70) {
-        valu = true;
+    if (ageInput <= 18) {
+      val = false;
+      checkError("ageInput", "Age should be above 18");
     }
-    else {
-        valu = false;
-        alert("Enter valid Age")
+  
+    return val;
+  }
+  var id, descr;
+  function checkError(id, descr) {
+    if (id === "nameInput") {
+      document.getElementById("namespan").innerHTML = descr;
     }
-    return valu
-
-}
+  
+    if (id === "numberInput") {
+      document.getElementById("numberspan").innerHTML = descr;
+    }
+  
+    if (id === "ageInput") {
+      document.getElementById("agespan").innerHTML = descr;
+    }
+  }
