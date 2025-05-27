@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colorClass{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="nameId">Name</label>
+        <span class="colorClass">*</span>
+        <span>:</span>
+        <input type="text" id="nameId" name="nameName" required>
+    </div>
+    <div>
+        <label for="ageId">Age</label>
+        <span class="colorClass">*</span>
+        <span>:</span>
+        <input type="number" id="ageId" name="ageAge" required>
+    </div>
+    <div>
+        <label>Gender</label>
+        <span class="colorClass">*</span>
+        <span>:</span>
+        <span>
+            <input type="radio" id="maleId">
+            <label for="maleId">Male</label>
+            <input type="radio" id="femaleId">
+            <label for="femaleId">Female</label>
+        </span>
+    </div>
+    <div>
+        <label>Number</label>
+        <span class="colorClass">*</span>
+        <span>:</span>
+        <input type="number" id="numberId" name="numNum" required>
+    </div>
+    <div>
+    <button>Submit</button>
+    <button>Clear</button>
+    </div>
+</body>
+</html>
