@@ -1,3 +1,5 @@
+//functions
+
 function submitForm() {
   let val = true;
 
