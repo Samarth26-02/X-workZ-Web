@@ -11,9 +11,7 @@ function submitForm() {
     if (20 >= nameId.length >= 3) {
         val = true;
     }
-    // else {
-    //     val = false;
-    // }
+
 
     if (numberId.length != 10) {
         val = false;
