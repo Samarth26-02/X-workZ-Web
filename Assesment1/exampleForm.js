@@ -1,3 +1,4 @@
+
 // function onClick() {
 //     document.getElementById('nameId').innerHTML='min 3 letter max 20 letetr';
 
